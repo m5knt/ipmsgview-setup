@@ -1,8 +1,6 @@
 ﻿/*
  * ipmsgview-setup
  *   copyright 2014 Yukio Kaneda @m5knt
- * ipmsgview
- *   Copyright (c) 2004-2007 Jiro Tsunoda 
  */
 
 !define TITLE "IPmsgView"
@@ -19,7 +17,7 @@
 !define REG_APP       "Software\${APP}"
 ; uninstall registry
 !define REG_UNINSTALL "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APP}"
-!define PUBLISHER     "Yukio Kaneda @m5knt"
+!define PUBLISHER     ""
 !define WEBSITE_LINK  "https://github.com/m5knt/ipmsgview-setup"
 
 /*
