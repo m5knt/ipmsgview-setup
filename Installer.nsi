@@ -20,11 +20,13 @@
 !define PUBLISHER     ""
 !define WEBSITE_LINK  "https://github.com/m5knt/ipmsgview-setup"
 
+;C:\Users\0\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
+;C:\ProgramData\Microsoft\Windows\Start Menu\Programs
 /*
  *
  */
 
-!include "x64.nsh"
+;!include "x64.nsh"
 !include "MUI2.nsh"
 !include "FileFunc.nsh"
 !include "LogicLib.nsh"
@@ -38,7 +40,7 @@ Var StartMenuFolder
 
 Name "${TITLE}"
 OutFile "${OUTPUT}"
-RequestExecutionLevel none ; http://nsis.sourceforge.net/Reference/RequestExecutionLevel
+RequestExecutionLevel admin ; http://nsis.sourceforge.net/Reference/RequestExecutionLevel
 
 ; see http://nsis.sourceforge.net/Docs/Modern%20UI%202/Readme.html
 !define SKIN "nsis-skin"
@@ -110,6 +112,7 @@ LangString UninstallFirst ${LANG_JAPANESE} "${APP} は既にインストール�
  */
 
 Function .onInit
+	SetShellVarContext current ; http://nsis.sourceforge.net/Docs/Chapter4.html#4.9.7.7
     StrCpy $INSTDIR "$PROGRAMFILES32\${APP}"
 	!insertmacro MUI_LANGDLL_DISPLAY
     Call UninstallPrev
@@ -148,10 +151,10 @@ Section
     WriteRegStr HKLM "${REG_UNINSTALL}" "UninstallString" "$\"$OUTDIR\Uninstall.exe$\" /S"
     WriteRegStr HKLM "${REG_UNINSTALL}" "InstallLocation" "$\"$INSTDIR$\""
     WriteRegStr HKLM "${REG_UNINSTALL}" "InstallSource" "$\"$EXEDIR$\""
-    WriteRegStr HKLM "${REG_UNINSTALL}" "HelpLink" "${WEBSITE_LINK}"
-    WriteRegStr HKLM "${REG_UNINSTALL}" "Contact" "${WEBSITE_LINK}"
-    WriteRegStr HKLM "${REG_UNINSTALL}" "URLInfoAbout" "${WEBSITE_LINK}"
-    WriteRegStr HKLM "${REG_UNINSTALL}" "URLUpdateInfo" "${WEBSITE_LINK}"
+    ;WriteRegStr HKLM "${REG_UNINSTALL}" "HelpLink" "${WEBSITE_LINK}"
+    ;WriteRegStr HKLM "${REG_UNINSTALL}" "Contact" "${WEBSITE_LINK}"
+    ;WriteRegStr HKLM "${REG_UNINSTALL}" "URLInfoAbout" "${WEBSITE_LINK}"
+    ;WriteRegStr HKLM "${REG_UNINSTALL}" "URLUpdateInfo" "${WEBSITE_LINK}"
     WriteRegDWord HKLM "${REG_UNINSTALL}" "NoModify" 1
     WriteRegDWord HKLM "${REG_UNINSTALL}" "NoRepair" 1
 SectionEnd
