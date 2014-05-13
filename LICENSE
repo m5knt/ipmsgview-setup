@@ -1,27 +1,14 @@
-Copyright (c) 2004-2007, Jiro Tsunoda
-All rights reserved.
+ライセンスに関する原文は ipmsgview/readme.txt を参照してください以下はライセンス関連文書のみを抜粋した内容です
+----
+　　　　　　IPmsgView
+　　　　　　　　　　Copyright (c) 2004-2007 Jiro Tsunoda
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-
-* Redistributions of source code must retain the above copyright notice, this
-  list of conditions and the following disclaimer.
-
-* Redistributions in binary form must reproduce the above copyright notice,
-  this list of conditions and the following disclaimer in the documentation
-  and/or other materials provided with the distribution.
-
-* Neither the name of the "Jiro Tsunoda" nor the names of its
-  contributors may be used to endorse or promote products derived from
-  this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+５．著作権・免責事項
+　このソフトはフリーウェアです。個人使用、業務使用に関わらず、自由に使用することが出来ます。
+　本プログラムの著作権は私（角田治朗）が所有します。
+　本プログラムを使用した結果生じた如何なる損害も保証しません。バグ報告/改善提案は歓迎しますが、作者はその義務を一切負わないこととします。
+　アーカイブの転載・再配布は自由ですが、オリジナルのまま、付属のドキュメントを添付して配布して下さい。
+　転載する場合は、事後で構わないので、作者に連絡をお願いします。
+　本プログラムを頒布するに際して金銭の授受があってはなりません。但し、メディア代などの実費についてはこの限りではありません。
+　雑誌等へ掲載する場合は、事前に連絡をお願いします。
+----
